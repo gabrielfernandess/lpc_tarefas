@@ -28,7 +28,6 @@ v1_api.register(TarefaResource())
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^api/', include(v1_api.urls)),
     url(r'^$', index, name='index'),
-
+    url(r'^api/', include(v1_api.urls)),
 ]

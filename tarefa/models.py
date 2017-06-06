@@ -12,7 +12,7 @@ class ProjetoUsuario(models.Model):
 class Usuario(models.Model):
     nome = models.CharField('nome', max_length=200)
     email = models.CharField('email', max_length=200)
-    senha = models.CharField('email', max_length=200)
+    senha = models.CharField('senha', max_length=200)
 
     def __str__(self):
         return '{}'.format(self.nome)

@@ -1,3 +1,7 @@
 from django.contrib import admin
+from tarefa.models import *
 
-# Register your models here.
+admin.site.register(ProjetoUsuario)
+admin.site.register(Projeto)
+admin.site.register(Usuario)
+admin.site.register(Tarefa)
